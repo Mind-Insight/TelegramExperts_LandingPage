@@ -7,19 +7,16 @@
 }
 
 body {
-    background: linear-gradient(71deg, rgba(132, 184, 197, 1) 0%, rgba(58, 125, 142, 1) 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
     margin: 0;
+    padding: 0;
+    background-image: url("images/back.jpg");
+    background-size: cover;
 }
 
 img {
     max-width: 100%;
     height: auto;
-}
-
-#content {
-    margin-bottom: 20px;
 }
 
 .header {
@@ -79,6 +76,7 @@ h1:before {
 .worker {
     float: right;
     margin-right: 15%;
+    margin-top: -3%;
 }
 
 .info {
@@ -91,6 +89,7 @@ h1:before {
     padding: 10px;
     width: fit-content;
     margin-bottom: 3%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero {
@@ -101,12 +100,89 @@ h1:before {
     border: 2px solid #000;
     padding: 10px;
     width: fit-content;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero:hover,
+.info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #load-more-btn {
-    margin-left: 15%;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
+#load-more-btn:hover {
+    background-color: #0096b6;
+}
+
+#new-content {
+    margin-top: 20%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+}
+
+.content-header {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 4%;
+    letter-spacing: 2px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10%;
+}
+
+.telegram,
+.whatsapp {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Адаптивность для маленьких экранов */
+@media screen and (max-width: 768px) {
+    #load-more-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #new-content {
+        margin-top: 10%;
+    }
+}
+
+/* Адаптивность для больших экранов */
+@media screen and (min-width: 1200px) {
+    #load-more-btn {
+        font-size: 20px;
+        padding: 14px 28px;
+    }
+
+    #new-content {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    #load-more-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
 /* Адаптивные стили */
 
 @media (max-width: 767px) {
@@ -136,4 +212,9 @@ h1:before {
     #load-more-btn {
         margin-left: 5%;
     }
+}
+
+.but {
+    display: flex;
+    margin: 3% 0 0 20%;
 }
