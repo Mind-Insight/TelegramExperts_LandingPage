@@ -7,11 +7,17 @@
 }
 
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
     background-image: url("images/back.jpg");
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex-grow: 1;
 }
 
 img {
@@ -107,11 +113,6 @@ h1:before {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.hero:hover,
-.info:hover {
-    
-}
-
 #load-more-btn {
     padding: 12px 24px;
     font-size: 18px;
@@ -130,32 +131,46 @@ h1:before {
 }
 
 .content-header {
-    font-size: 34px;
+    font-size: 32px;
+    color: #333;
     text-align: center;
+    padding: 10px;
+    border-top: 1px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 4%;
-    letter-spacing: 2px;
-}
-
-figcaption {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 10%;
-}
-
-.telegram,
-.whatsapp {
-    height: auto;
-    width: auto;
-    max-width: 200px;
-    max-height: 200px;
+    letter-spacing: 3px;
 }
 
 .contacts {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
 }
 
-/* Адаптивность для маленьких экранов */
+.contacts img {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+figcaption {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10%;
+}
+
 @media screen and (max-width: 768px) {
     #load-more-btn {
         font-size: 16px;
@@ -167,7 +182,6 @@ figcaption {
     }
 }
 
-/* Адаптивность для больших экранов */
 @media screen and (min-width: 1200px) {
     #load-more-btn {
         font-size: 20px;
@@ -185,7 +199,6 @@ figcaption {
         padding: 10px 20px;
     }
 }
-/* Адаптивные стили */
 
 @media (max-width: 767px) {
     .header {
@@ -219,4 +232,10 @@ figcaption {
 .but {
     display: flex;
     margin: 3% 0 0 20%;
+}
+
+.footer {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
 }
