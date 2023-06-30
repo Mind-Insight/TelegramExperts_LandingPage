@@ -25,7 +25,7 @@ let isNewContentVisible = false;
 loadMoreBtn.addEventListener("click", function () {
   if (isNewContentVisible) {
     newContent.style.opacity = "0";
-    newContent.style.transform = "translateY(-20px)";
+    newContent.style.transform = "translateY(0)";
     loadMoreBtn.style.background = "white";
     setTimeout(function () {
       newContent.style.display = "none";
