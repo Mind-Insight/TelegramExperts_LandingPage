@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 * {
     font-family: "Poppins", sans-serif;
@@ -121,7 +121,7 @@ h1:before {
 }
 
 #load-more-btn {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: lightblue;
     padding: 12px 24px;
     font-size: 18px;
@@ -267,7 +267,6 @@ figcaption {
     transition: background-color 0.3s;
 }
 
-
 .go_whatsapp:hover {
     border: 2px solid #4caf50;
     background-color: #4caf50;
@@ -278,4 +277,62 @@ figcaption {
     border: 2px solid #0088cc;
     background-color: #0088cc;
     color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        width: 100%;
+        padding: 10% 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .worker {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+
+    .info,
+    .hero {
+        margin-top: 5%;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #load-more-btn {
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+
+    .but {
+        flex-direction: column;
+        margin: 5% auto 0;
+        width: 80%;
+    }
+
+    .go_telegram,
+    .go_whatsapp {
+        margin: 5% auto;
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts img {
+        width: 150px;
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
