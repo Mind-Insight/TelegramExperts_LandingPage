@@ -81,6 +81,9 @@ h1:before {
         transform: translate3d(0, -10%, 0);
     }
 }
+#new-content {
+    height: 75vh;
+}
 
 .worker {
     width: 40%;
