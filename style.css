@@ -245,10 +245,6 @@ figcaption {
     display: flex;
     margin: 3% 0 0 20%;
 }
-.content {
-    display: flex;
-    flex-direction: column;
-}
 
 .footer {
     font-size: 20px;
@@ -334,12 +330,13 @@ figcaption {
 
     #load-more-btn {
         margin-left: 0;
-        margin-bottom: 13%;
+        margin-bottom: 15%;
     }
 
     .but {
         flex-direction: column;
-        margin-top: 8% auto 0;
+        align-items: center;
+        margin-top: 10% auto 0;
         width: 80%;
     }
 
@@ -358,7 +355,7 @@ figcaption {
         align-items: center;
     }
     .telegramfig {
-        margin-bottom: 8%;
+        margin-bottom: 10%;
     }
 
     .contacts img {
