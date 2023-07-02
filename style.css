@@ -40,7 +40,7 @@ img {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 40px;
     text-shadow: 3px 3px #000;
     margin: 0;
 }
@@ -245,6 +245,10 @@ figcaption {
     display: flex;
     margin: 3% 0 0 20%;
 }
+.content {
+    display: flex;
+    flex-direction: column;
+}
 
 .footer {
     font-size: 20px;
@@ -257,7 +261,7 @@ figcaption {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 60px; /* Добавлен отступ сверху для предотвращения перекрытия контента */
+    margin-top: 60px;
 }
 
 .go_telegram,
@@ -307,7 +311,7 @@ figcaption {
         width: 90%;
         height: auto;
         margin-top: 0;
-        margin-bottom: 5%;
+        margin-bottom: 8%;
         margin-left: 0;
     }
 
@@ -315,7 +319,7 @@ figcaption {
         order: 1;
         display: flex;
         justify-content: center;
-        margin-top: 5%;
+        margin-top: 8%;
         font-size: 16px;
         width: 90%;
     }
@@ -323,26 +327,25 @@ figcaption {
         order: 3;
         display: flex;
         justify-content: center;
-        margin-top: 5%;
+        margin-top: 8%;
         font-size: 14px;
         width: 90%;
     }
 
     #load-more-btn {
         margin-left: 0;
-        margin-bottom: 5%;
+        margin-bottom: 13%;
     }
 
     .but {
         flex-direction: column;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 8% auto 0;
         width: 80%;
     }
 
     .go_telegram,
     .go_whatsapp {
-        margin: 5% auto;
+        margin: 8% auto;
         width: 100%;
     }
 
@@ -353,6 +356,9 @@ figcaption {
     .contacts {
         flex-direction: column;
         align-items: center;
+    }
+    .telegramfig {
+        margin-bottom: 8%;
     }
 
     .contacts img {
