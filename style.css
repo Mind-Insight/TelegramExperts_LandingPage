@@ -24,7 +24,6 @@ body {
 }
 
 img {
-    max-width: 100%;
     height: auto;
 }
 
@@ -40,7 +39,7 @@ img {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 20px;
     text-shadow: 3px 3px #000;
     margin: 0;
 }
