@@ -166,9 +166,9 @@ h1:before {
         align-items: center;
     }
 
-    /* #new-content {
+    #new-content {
         height: 75vh;
-    } */
+    }
 
     .contacts img {
         margin-right: 0;
@@ -301,6 +301,7 @@ figcaption {
     .hero {
         margin-top: 5%;
         margin-left: 0;
+        font-size: 18px;
         width: 100%;
     }
 
