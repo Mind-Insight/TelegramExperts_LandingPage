@@ -16,7 +16,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
 }
 
 .wrapper {
@@ -309,13 +309,19 @@ figcaption {
         margin-left: 0;
     }
 
-    .info,
+    .info {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        font-size: 14px;
+        width: 90%;
+    }
     .hero {
         display: flex;
         justify-content: center;
         margin-top: 5%;
-        font-size: 16px;
-        width: 100%;
+        font-size: 12px;
+        width: 90%;
     }
 
     #load-more-btn {
@@ -336,6 +342,7 @@ figcaption {
     }
 
     .footer {
+        margin-top: 20px;
         font-size: 18px;
     }
 
