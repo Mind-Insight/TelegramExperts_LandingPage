@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -256,7 +257,7 @@ figcaption {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 20px; /* Добавлен отступ сверху для предотвращения перекрытия контента */
+    margin-top: 60px; /* Добавлен отступ сверху для предотвращения перекрытия контента */
 }
 
 .go_telegram,
@@ -302,6 +303,7 @@ figcaption {
     }
 
     .worker {
+        order: 2;
         width: 90%;
         height: auto;
         margin-top: 0;
@@ -310,17 +312,19 @@ figcaption {
     }
 
     .info {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        font-size: 16px;
+        width: 90%;
+    }
+    .hero {
+        order: 3;
         display: flex;
         justify-content: center;
         margin-top: 5%;
         font-size: 14px;
-        width: 90%;
-    }
-    .hero {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        font-size: 12px;
         width: 90%;
     }
 
@@ -331,7 +335,8 @@ figcaption {
 
     .but {
         flex-direction: column;
-        margin: 5% auto 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
         width: 80%;
     }
 
@@ -342,7 +347,6 @@ figcaption {
     }
 
     .footer {
-        margin-top: 20px;
         font-size: 18px;
     }
 
@@ -356,5 +360,8 @@ figcaption {
         height: 150px;
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    #new-content {
+        height: 100vh;
     }
 }
