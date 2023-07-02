@@ -311,6 +311,7 @@ figcaption {
     }
 
     .worker {
+        display: none;
         order: 2;
         width: 90%;
         height: auto;
@@ -320,6 +321,8 @@ figcaption {
     }
 
     .info {
+        display: none;
+        line-height: normal;
         order: 1;
         display: flex;
         justify-content: center;
@@ -328,6 +331,8 @@ figcaption {
         width: 90%;
     }
     .hero {
+        display: none;
+        line-height: normal;
         order: 3;
         display: flex;
         justify-content: center;
