@@ -311,7 +311,6 @@ figcaption {
     }
 
     .worker {
-        display: none;
         order: 2;
         width: 90%;
         height: auto;
