@@ -200,6 +200,7 @@ figcaption {
 
     #new-content {
         margin-top: 20%;
+        height: 75vh;
     }
 }
 
@@ -282,6 +283,8 @@ figcaption {
 
 @media screen and (max-width: 480px) {
     .header {
+        display: flex;
+        justify-content: center;
         width: 100%;
         padding: 10% 0;
     }
@@ -291,17 +294,19 @@ figcaption {
     }
 
     .worker {
-        width: 100%;
+        width: 90%;
         height: auto;
         margin-top: 0;
         margin-bottom: 5%;
+        margin-left: 0;
     }
 
     .info,
     .hero {
+        display: flex;
+        justify-content: center;
         margin-top: 5%;
-        margin-left: 0;
-        font-size: 18px;
+        font-size: 16px;
         width: 100%;
     }
 
@@ -323,7 +328,7 @@ figcaption {
     }
 
     .footer {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .contacts {
