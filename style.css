@@ -83,14 +83,20 @@ h1:before {
     }
 }
 
+#content {
+    display: flex;
+    align-items: flex-start;
+}
+
 .worker {
-    width: 40%;
-    height: 40%;
-    float: right;
-    margin-top: -15%;
+    height: 100vh;
+    width: 70vh;
+    /* float: right; */
+    margin-top: -35%;
 }
 
 .info {
+    line-height: 40px;
     font-family: "Comfortaa", cursive;
     font-weight: 700;
     letter-spacing: 2px;
@@ -99,25 +105,28 @@ h1:before {
     margin-top: 6%;
     margin-left: 10%;
     padding: 10px;
-    width: fit-content;
+    width: 75%;
     margin-bottom: 3%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform: scale(1.05);
 }
 
 .hero {
+    line-height: 40px;
     font-family: "Comfortaa", cursive;
     letter-spacing: 2px;
     font-size: 22px;
     display: block;
     margin-left: 10%;
     padding: 10px;
-    width: fit-content;
+    width: 75%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform: scale(1.05);
 }
 
 #load-more-btn {
+    margin-top: 8%;
+    margin-left: 20%;
     font-family: "Roboto", sans-serif;
     background-color: lightblue;
     padding: 12px 24px;
@@ -210,7 +219,6 @@ figcaption {
         padding: 10px 20px;
     }
 }
-
 
 @media (max-width: 767px) {
     .header {
@@ -335,8 +343,7 @@ figcaption {
 
     .but {
         flex-direction: column;
-        align-items: center;
-        margin-top: 10% auto 0;
+        margin: 10% auto 0;
         width: 80%;
     }
 
@@ -355,7 +362,7 @@ figcaption {
         align-items: center;
     }
     .telegramfig {
-        margin-bottom: 10%;
+        margin-bottom: 8%;
     }
 
     .contacts img {
